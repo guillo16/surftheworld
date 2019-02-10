@@ -5,6 +5,7 @@
 <% @locations.each do |location| %>
 
 <%= location.name %>
-<%= location.photo %>
+<img src="<%= location.photo %>" alt="card img">
+
 <%= location.address %>
 <%end %>
