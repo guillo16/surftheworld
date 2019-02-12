@@ -1,0 +1,7 @@
+<% @videos.each do |video| %>
+
+
+<img class="card-img-top" src="https://img.youtube.com/vi/<%= video.url %>/hqdefault.jpg" alt="Card image cap">
+<%= video.title %>
+<%= video.region %>
+<% end %>
