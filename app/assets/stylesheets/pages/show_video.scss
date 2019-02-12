@@ -1,0 +1,50 @@
+.video-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+
+.video-wrapper {
+text-align: center;
+display: flex;
+    justify-content: center;
+
+
+}
+
+.video-player {
+  text-align: center;
+  border: solid;
+  background-color: #34699a;
+  color: white;
+  border: 3px solid;
+  border-color: #34699a;
+  border-radius: 4px;
+  h5 {
+
+    margin-left: 10px;
+    font-weight: bold;
+  }
+}
+
+
+.video-button {
+  text-align: center;
+
+  .btn {
+     padding-right: 200px;
+  padding-left: 200px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: #34699a;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  border-color: #34699a;
+  }
+
+}
