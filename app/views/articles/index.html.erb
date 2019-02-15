@@ -1,0 +1,16 @@
+<h1> hello world</h1>
+
+
+<% @articles.each do |article| %>
+
+<%= link_to article_path(article) do %>
+
+<%= article.title %>
+<%= article.photo_1 %>
+<%= article.subtitle %>
+
+<%end%>
+<%end%>
+
+
+
