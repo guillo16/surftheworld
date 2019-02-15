@@ -8,6 +8,7 @@
 
 puts 'clearing database'
 Location.destroy_all
+Video.destroy_all
 puts 'creating locations'
 
 Location.create!(name: "Nazare", address: "Nazaré, Leiria, Portugal", photo: "https://i0.wp.com/blog.nuestroclima.com/wp-content/uploads/2015/10/Olas-gigantes-en-Portugal-1.png?w=1000")
