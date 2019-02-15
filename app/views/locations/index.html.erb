@@ -1,11 +1,14 @@
+<h1> Locations</h1>
 <div class="main-container">
   <div class="locations">
     <% @locations.each do |location| %>
+    <%= link_to location_path(location) do%>
     <%= location.name %>
     <img src="<%= location.photo %>" alt="card img">
     <%= location.address %>
-    <%end %>
-  </div>
+       <%end %>
+  <%end %>
+      </div>
 
   <div
   id="map"

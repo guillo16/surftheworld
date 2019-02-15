@@ -3,7 +3,7 @@ class LocationsController < ApplicationController
 
 
   def index
-    @locations = Location.all
+    @locations = Location.order(created_at: :desc)
 
     @locations = Location.where.not(latitude: nil, longitude: nil)
 
