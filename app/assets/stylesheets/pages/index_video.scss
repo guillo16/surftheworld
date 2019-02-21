@@ -93,8 +93,12 @@
     font-weight: bold;
     color: black;
     background-color: #fafafa;
-    border-color: #fafafa;
+    border: none;
+
     word-spacing: 90px;
+    &:focus {
+    outline: none;
+  }
 
   }
 
@@ -103,9 +107,12 @@
     font-weight: bold;
     color: black;
     background-color: #fafafa;
-    border-color: #fafafa;
+    border: none;
     margin-left: 20px;
     margin-bottom: 20px;
+     &:focus {
+    outline: none;
+  }
 
   }
 }
