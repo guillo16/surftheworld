@@ -8,6 +8,7 @@
 
 puts 'clearing database'
 Location.destroy_all
+Video.destroy_all
 puts 'creating locations'
 
 Location.create!(name: "Nazare", address: "Nazaré, Leiria, Portugal", photo: "https://i0.wp.com/blog.nuestroclima.com/wp-content/uploads/2015/10/Olas-gigantes-en-Portugal-1.png?w=1000")
@@ -18,6 +19,7 @@ puts ' creating videos'
 
 Video.create!(title:"The Best Of Kelly Slater", url: "kazCuBTUBiA", region:"Usa", rating:"5")
 Video.create!(title:"Episode 3 of 7 Hurley John John Florence", url: "bEbLOu2wyRw", region:"Usa", rating:"5")
+Video.create!(title:"Kelly Slater in Continuance 1", url: "IZ5L6DXB-iw", region:"Usa", rating:"5")
 
 puts 'finished'
 
