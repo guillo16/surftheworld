@@ -22,5 +22,18 @@ import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
         .addTo(map);
     })
 
+   if (markers.lenght === 0) {
+     map.setZoom(1);
+    } else if (markers.lenght === 1) {
+      map.setZoom(14);
+      map.setCenter([markers[0].lng, marker[0].lat]);
+    } else {
+      const bounds = new mapboxgl.LngLatBounds();
+      markers.forEach((marker) => {
+        bounds.extend([marker.lng, marker.lat]);
+      });
+      map.fitBounds(bounds, { duration: 0, padding: 75 })
+    }
+
     map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken }));
   }
