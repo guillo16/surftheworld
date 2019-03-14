@@ -1,16 +1,28 @@
-<h1> hello world</h1>
+<div class="main-article-container">
+ <div class="sidebar">
+ </div>
+ <div class="articles">
+
+  <% @articles.each do |article| %>
+
+  <%= link_to article_path(article) do %>
+  <div class="article">
+    <img src="<%= article.photo_1 %>" alt="">
+
+    <div class="article-body">
+     <h3><%= article.title %></h3>
+     <h5><%= article.subtitle %></h5>
+   </div>
+ </div>
+ <%end%>
+ <%end%>
+</div>
 
 
-<% @articles.each do |article| %>
 
-<%= link_to article_path(article) do %>
+<div class="messages">
 
-<%= article.title %>
-<%= article.photo_1 %>
-<%= article.subtitle %>
-
-<%end%>
-<%end%>
+</div>
 
 
-
+</div>

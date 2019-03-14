@@ -1,1 +1,17 @@
-<h1> hello world</h1>
+
+<div class="article-banner">
+  <img src="<%= @article.photo_1 %>" alt="">
+</div>
+<div class="article-container">
+  <h1><%= @article.title %></h1>
+  <h5><%= @article.subtitle %></h5>
+  <h6><%= @article.writer %> || <%= @article.created_at.strftime("%d de %B de %Y") %> </h6>
+  <p><%=  @article.main_article%></p>
+  <img src="<%= @article.photo_2 %> " alt="">
+  <p> <%= @article.sub_article %></p>
+  <img src="<%= @article.photo_3 %> " alt="">
+</div>
+<div class="article-button">
+  <%= link_to 'Back to Articles', articles_path, class: 'btn btn-primary'  %>
+</div>
+
