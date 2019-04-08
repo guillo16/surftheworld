@@ -10,6 +10,7 @@ puts 'clearing database'
 Location.destroy_all
 Video.destroy_all
 Article.destroy_all
+Dolar.destroy_all
 puts 'creating locations'
 
 Location.create!(name: "Nazare", address: "Nazaré, Leiria, Portugal", photo: "https://i0.wp.com/blog.nuestroclima.com/wp-content/uploads/2015/10/Olas-gigantes-en-Portugal-1.png?w=1000")
@@ -137,6 +138,9 @@ Find the entire open letter from Australia’s surfing royalty below.",
 # Article.create!(title: "", subtitle: "", main_article: "", sub_article: "", writer: "", photo_1: "", photo_2: "", photo_3: "")
 # Article.create!(title: "", subtitle: "", main_article: "", sub_article: "", writer: "", photo_1: "", photo_2: "", photo_3: "")
 # Article.create!(title: "", subtitle: "", main_article: "", sub_article: "", writer: "", photo_1: "", photo_2: "", photo_3: "")
+puts 'creating dolar'
+Dolar.create!(dolarc: "44,50", dolarv: "40,50", euroc: "50,50", eurov: "55,40", realc: "10,50", realv: "11,50")
+Dolar.create!(dolarc: "44,50", dolarv: "40,50", euroc: "50,50", eurov: "55,40", realc: "10,50", realv: "11,50")
 
 puts 'finished'
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_12_151703) do
+ActiveRecord::Schema.define(version: 2019_04_08_151540) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,17 @@ ActiveRecord::Schema.define(version: 2019_02_12_151703) do
     t.string "photo_1"
     t.string "photo_2"
     t.string "photo_3"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "dolars", force: :cascade do |t|
+    t.string "dolarc"
+    t.string "dolarv"
+    t.string "eurov"
+    t.string "euroc"
+    t.string "realc"
+    t.string "realv"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
