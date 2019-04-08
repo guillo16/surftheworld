@@ -11,7 +11,7 @@
 
     <% @locations.each do |location| %>
     <%= link_to location_path(location) do%>
-    <div class="location-content">
+    <div class="location-content", data-location-id="<%= location.id %>">
       <img src="<%= location.photo %>" alt="card img">
       <h3><%= location.name %></h3>
     </div>
