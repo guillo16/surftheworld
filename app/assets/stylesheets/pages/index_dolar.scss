@@ -10,3 +10,18 @@
     font-weight: bold;
   }
 }
+
+.dolar-footer {
+  text-align: right;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+
+  a {
+    color: black;
+    &:hover {
+      text-decoration: none;
+      color: lightgrey;
+    }
+  }
+}

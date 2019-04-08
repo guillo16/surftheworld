@@ -1,45 +1,38 @@
 <div class="cotizacion-container">
-
-<% @dolars.each do |dolar| %>
-
-
-<table class="table">
-
-  <thead>
-
-    <tr>
-      <th scope="col">Moneda</th>
-      <th scope="col"></th>
-      <th scope="col">Venta</th>
-      <th scope="col">Compra</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dolar</td>
-      <td></td>
-      <td><%= dolar.dolarv %></td>
-      <td><%= dolar.dolarc %></td>
-    </tr>
-    <tr>
-      <td>Euro</td>
-      <td></td>
-      <td><%= dolar.eurov %></td>
-      <td><%= dolar.euroc %></td>
-    </tr>
-    <tr>
-      <td>Real</td>
-      <td></td>
-      <td><%= dolar.realv %></td>
-      <td><%= dolar.realc %></td>
-    </tr>
-  </tbody>
-</table>
-<h4><%= dolar.updated_at.strftime('%d/%m/%y - %H.%M') %></h4>
-<%= link_to  dolar_path(dolar) do %>
-<h3>lamebo</h3>
-<% end %>
-<% end %>
-
+  <% @dolars.each do |dolar| %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Moneda</th>
+        <th scope="col"></th>
+        <th scope="col">Venta</th>
+        <th scope="col">Compra</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-usa.jpg" alt=""> <br>Dolar </td>
+        <td></td>
+        <td><%= dolar.dolarv %></td>
+        <td><%= dolar.dolarc %></td>
+      </tr>
+      <tr>
+        <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-euro.jpg" alt=""><br>Euro</td>
+        <td></td>
+        <td><%= dolar.eurov %></td>
+        <td><%= dolar.euroc %></td>
+      </tr>
+      <tr>
+        <td><img src="https://res.cloudinary.com/dw7ox75dg/image/upload/v1554760381/flag-br.jpg" alt=""><br>Real</td>
+        <td></td>
+        <td><%= dolar.realv %></td>
+        <td><%= dolar.realc %></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="dolar-footer">
+    <p>Actualizado: <%= dolar.updated_at.strftime('%d/%m/%y - %H.%M') %>-<%= link_to 'Lamebo',dolar_path(dolar) %> </p>
+  </div>
+  <% end %>
 </div>
 
