@@ -1,4 +1,5 @@
 class DolarsController < ApplicationController
+  skip_before_action :authenticate_user!, only: :index
   before_action :set_dolars, only: [:show, :edit, :update]
   def index
     @dolars = Dolar.all
@@ -16,7 +17,7 @@ class DolarsController < ApplicationController
     redirect_to dolar_path(@dolar)
   end
 
-private
+  private
 
   def dolars_params
     params.require(:dolar).permit(:dolarv, :dolarc, :euroc, :eurov, :realc, :realv)

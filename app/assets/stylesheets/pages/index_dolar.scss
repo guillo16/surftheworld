@@ -1,0 +1,28 @@
+.cotizacion-container {
+  width: 70%;
+  margin: auto;
+}
+
+.table {
+  margin-top: 70px;
+  th {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+
+.dolar-footer {
+  text-align: right;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+
+  a {
+    color: black;
+    &:hover {
+      text-decoration: none;
+      color: lightgrey;
+    }
+  }
+}
