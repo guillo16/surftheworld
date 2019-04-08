@@ -1,0 +1,2 @@
+class DolarsController < ApplicationController
+end
