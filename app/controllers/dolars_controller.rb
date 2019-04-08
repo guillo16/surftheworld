@@ -4,21 +4,8 @@ class DolarsController < ApplicationController
     @dolars = Dolar.all
   end
 
-  def new
-    @dolar = Dolar.new
-  end
-
   def show
 
-  end
-
-  def create
-    @dolar = Dolar.new(dolars_params)
-    if @dolar.save == true
-      redirect_to dolar_path(@dolar)
-    else
-      render :new
-    end
   end
 
   def edit

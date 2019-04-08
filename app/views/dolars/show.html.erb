@@ -1,7 +1,34 @@
-<h1>hollaaa</h1>
+<h1>Cotizacion</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Moneda</th>
+      <th scope="col"></th>
+      <th scope="col">Venta</th>
+      <th scope="col">Compra</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dolar</td>
+      <td></td>
+      <td><%= @dolar.dolarv %></td>
+      <td><%= @dolar.dolarc %></td>
+    </tr>
+    <tr>
+      <td>Euro</td>
+      <td></td>
+      <td><%= @dolar.eurov %></td>
+      <td><%= @dolar.euroc %></td>
+    </tr>
+    <tr>
+      <td>Real</td>
+      <td></td>
+      <td><%= @dolar.realv %></td>
+      <td><%= @dolar.realc %></td>
+    </tr>
+  </tbody>
+</table>
 
-
-      <%= @dolar.dolarv %>
-      <%= @dolar.dolarc %>
 <%= link_to 'edit' , edit_dolar_path %>
 
