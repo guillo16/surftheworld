@@ -140,5 +140,7 @@ Find the entire open letter from Australia’s surfing royalty below.",
 # Article.create!(title: "", subtitle: "", main_article: "", sub_article: "", writer: "", photo_1: "", photo_2: "", photo_3: "")
 puts 'creating dolar'
 Dolar.create!(dolarc: "44,50", dolarv: "40,50", euroc: "50,50", eurov: "55,40", realc: "10,50", realv: "11,50")
+Dolar.create!(dolarc: "44,50", dolarv: "40,50", euroc: "50,50", eurov: "55,40", realc: "10,50", realv: "11,50")
+
 puts 'finished'
 

@@ -1,0 +1,19 @@
+<h1> hello world</h1>
+
+
+
+<%= simple_form_for @dolar do |f| %>
+        <%= f.error_notification %>
+
+
+<%= f.input :dolarc, required: true, value: @dolar.dolarc %>
+         <%= f.input :dolarv, required: true, value: @dolar.dolarv %>
+          <%= f.input :euroc, required: true, value: @dolar.euroc %>
+          <%= f.input :eurov, required: true, value: @dolar.eurov %>
+          <%= f.input :realc, required: true, value: @dolar.realc %>
+         <%= f.input :realv, required: true, value: @dolar.realv %>
+
+
+<%= f.button :submit, "update", class: 'btn btn-primary' %>
+
+<% end %>

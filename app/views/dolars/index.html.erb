@@ -1,4 +1,5 @@
 <% @dolars.each do |dolar| %>
+ <%= link_to  dolar_path(dolar) do %>
 <table class="table">
   <thead>
     <tr>
@@ -30,3 +31,7 @@
   </tbody>
 </table>
 <% end %>
+<% end %>
+
+
+
